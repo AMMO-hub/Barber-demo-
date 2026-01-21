@@ -1,0 +1,175 @@
+<!-- =========================
+ PROJECT: Barber (Demo)
+ Struktur för GitHub Pages
+ =========================
+
+FILSTRUKTUR:
+/
+|-- index.html
+|-- services.html
+|-- gallery.html
+|-- contact.html
+|-- css/style.css
+|-- js/main.js
+|-- assets/logo.png   (din logga)
+
+=========================
+ index.html
+========================= -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barber (Demo)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<nav class="nav">
+  <img src="assets/logo.png" class="logo" alt="Barber Demo Logo" />
+  <ul>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="services.html">Tjänster</a></li>
+    <li><a href="gallery.html">Galleri</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+</nav>
+
+<header class="hero fade-in">
+  <h1>Barber (Demo)</h1>
+  <p>Modern barberarkonst med klassisk precision</p>
+  <a href="services.html" class="btn">Våra tjänster</a>
+</header>
+
+<section class="section slide-up">
+  <h2>Premiumupplevelse</h2>
+  <p>Herrklippning, skägg, rakning och styling i professionell miljö.</p>
+</section>
+
+<footer>
+  <p>© 2026 Barber (Demo)</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- =========================
+ services.html
+========================= -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tjänster – Barber (Demo)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<nav class="nav">
+  <img src="assets/logo.png" class="logo" />
+  <ul>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="services.html">Tjänster</a></li>
+    <li><a href="gallery.html">Galleri</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+</nav>
+<section class="section fade-in">
+  <h2>Tjänster</h2>
+  <div class="grid">
+    <div class="card">Herrklippning</div>
+    <div class="card">Skäggtrim</div>
+    <div class="card">Rakning</div>
+    <div class="card">Skinfade</div>
+  </div>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- =========================
+ gallery.html
+========================= -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galleri – Barber (Demo)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<nav class="nav">
+  <img src="assets/logo.png" class="logo" />
+  <ul>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="services.html">Tjänster</a></li>
+    <li><a href="gallery.html">Galleri</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+</nav>
+<section class="section slide-up">
+  <h2>Galleri</h2>
+  <p>Plats för bilder på klippningar och lokalen.</p>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- =========================
+ contact.html
+========================= -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kontakt – Barber (Demo)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<nav class="nav">
+  <img src="assets/logo.png" class="logo" />
+  <ul>
+    <li><a href="index.html">Hem</a></li>
+    <li><a href="services.html">Tjänster</a></li>
+    <li><a href="gallery.html">Galleri</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+</nav>
+<section class="section fade-in">
+  <h2>Kontakt</h2>
+  <form class="form">
+    <input placeholder="Namn" required />
+    <input placeholder="E-post" required />
+    <textarea placeholder="Meddelande"></textarea>
+    <button>Skicka</button>
+  </form>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!-- =========================
+ css/style.css
+========================= -->
+body{margin:0;font-family:Arial;background:#111;color:#f5f5f5}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#000}
+.logo{height:50px}
+.nav ul{list-style:none;display:flex;gap:1.5rem}
+.nav a{color:#fff;text-decoration:none}
+.hero{height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.btn{background:#c7a24b;color:#000;padding:0.8rem 1.4rem;text-decoration:none;margin-top:1rem}
+.section{padding:4rem 2rem;max-width:1100px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}
+.card{background:#1c1c1c;padding:2rem;text-align:center}
+.form{max-width:400px;display:grid;gap:1rem}
+input,textarea,button{padding:0.7rem;border:none}
+button{background:#c7a24b;font-weight:bold}
+.fade-in{animation:fade 1.2s ease forwards}
+.slide-up{animation:slide 1s ease forwards}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes slide{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+footer{text-align:center;padding:2rem;background:#000}
+
+<!-- =========================
+ js/main.js
+========================= -->
+console.log('Barber (Demo) loaded');
